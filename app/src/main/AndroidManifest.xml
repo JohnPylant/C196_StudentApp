@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.c196_studentapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.C196_StudentApp">
+
+        <receiver
+            android:name=".GUI.myReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+
+            <activity
+                android:name=".GUI.courseDetails"
+                android:exported="false"
+                android:label="Course Details"
+                />
+            <activity
+                android:name=".GUI.assessmentDetails"
+                android:exported="false"
+                android:label="Assessment Details"
+                />
+            <activity
+                android:name=".GUI.terms"
+                android:exported="false"
+                android:label="Terms"
+                />
+            <activity
+                android:name=".GUI.courses"
+                android:exported="false"
+                android:label="Courses"
+                />
+            <activity
+                android:name=".GUI.termDetails"
+                android:exported="false"
+                android:label="Term Details"
+                />
+            <activity
+                android:name=".GUI.assessments"
+                android:exported="false"
+                android:label="Assessments"
+                />
+            <activity
+                android:name=".GUI.MainActivity"
+                android:exported="true"
+                android:noHistory="true">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+            <activity
+                android:name=".GUI.mainScreen"
+                android:exported="true" />
+    </application>
+
+</manifest>
